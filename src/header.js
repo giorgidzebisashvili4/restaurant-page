@@ -12,7 +12,7 @@ headerDiv.classList.add ("header");
 //buttons for headeer
 let homeBtn = document.createElement('button')
 homeBtn.textContent="home"
-homeBtn.classList.add ("homeBtn")
+container.removeChild(lastChild)
 
 let menuBtn = document.createElement('button')
 menuBtn.textContent="menu"
@@ -30,22 +30,21 @@ headerDiv.appendChild(contactBtn)
 container.appendChild(headerDiv)
 
 //event listeners to change content
-homeBtn.addEventListener('click',()=>{
-    container.removeChild()
-    home()
-})
+homeBtn.addEventListener('click', () => {
+    container.innerHTML = ""; 
+    home();
+  });
 
-menuBtn.addEventListener('click',()=>{
-    headerDiv.removeChild
+  menuBtn.addEventListener('click', () => {
+  
+    headerDiv.innerHTML = "";
+    menu();
+  });
 
-    menu()
-})
-
-contactBtn.addEventListener('click',()=>{
-    headerDiv.removeChild
-
-    contact()
-})
+  contactBtn.addEventListener('click', () => {
+    headerDiv.innerHTML = "";
+    contact();
+  });
 
 }
 
