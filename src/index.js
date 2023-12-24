@@ -1,6 +1,6 @@
-const container = document.querySelector('#container')
+import { header } from "./header";
+import {home} from "./home"
+import { menu } from "./menu";
+import { contact } from "./contact";
 
-const test = document.createElement('div')
-test.textContent = "hey again"
-
-container.appendChild(test)
+header()
