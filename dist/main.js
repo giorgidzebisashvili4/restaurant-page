@@ -1,0 +1,1 @@
+(()=>{const e=document.querySelector("#container"),t=document.createElement("div");t.textContent="hey again",e.appendChild(t)})();
