@@ -1,6 +1,7 @@
-import { home } from "./home"
+import { home } from "./home";
 import { menu } from "./menu";
 import { contact } from "./contact";
+import {logo} from "./index";
 
 function header(){
 
@@ -8,6 +9,9 @@ const container = document.querySelector('#container')
 
 const headerDiv = document.createElement('div')
 headerDiv.classList.add ("header");
+
+const btnDiv = document.createElement('div')
+btnDiv.classList.add ("btns");
 
 //buttons for header
 let homeBtn = document.createElement('button')
@@ -22,16 +26,24 @@ let contactBtn = document.createElement('button')
 contactBtn.textContent="contact"
 contactBtn.classList.add ("contactBtn")
 
+//add logo
+const HeaderLogo = new Image();
+HeaderLogo.src = logo;
+
 container.appendChild(headerDiv)
 
-headerDiv.appendChild(homeBtn)
-headerDiv.appendChild(menuBtn)
-headerDiv.appendChild(contactBtn)
+headerDiv.appendChild(HeaderLogo)
+
+headerDiv.appendChild(btnDiv)
+
+btnDiv.appendChild(homeBtn)
+btnDiv.appendChild(menuBtn)
+btnDiv.appendChild(contactBtn)
 
 function removeLastDomContent(){
   container.removeChild(container.lastChild);
 }
-const allHeaderBtns = document.querySelectorAll('.header>button')
+const allHeaderBtns = document.querySelectorAll('.btns>button')
 
 // defolt load home page
 home()

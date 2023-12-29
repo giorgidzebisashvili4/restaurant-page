@@ -1,0 +1,42 @@
+@font-face {
+    font-family: "FontForBtm";
+    src: url('./DancingScript-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: "fontForParagraph";
+    src: url('./Merriweather-Regular.woff') format('woff');
+}
+@font-face{
+    font-family: "fontForHeader";
+    src: url('./Merriweather-Bold.woff')format("woff"); 
+    font-weight: bold;
+}
+
+.header{
+align-items: center;
+background-color: black;
+display: grid;
+justify-items: center;
+padding: 20px;
+}
+.header>img{
+    width: 400px;
+}
+.btns{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(3, auto);
+}
+button{
+    font-family: "FontForBtm";
+    background-color: #ffffff; /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    
+}
