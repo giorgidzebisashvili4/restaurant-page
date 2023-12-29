@@ -40,3 +40,21 @@ button{
     border-radius: 12px;
     
 }
+.homeBtn{
+    background-color: gray;
+}
+
+.menu,
+.home,
+.contact{
+    display: grid;
+    justify-items: center;
+}
+.home>*,
+.menu>*,
+.contact>*{
+    width: 500px;
+}
+.food1>img{
+    width: 250px;
+}

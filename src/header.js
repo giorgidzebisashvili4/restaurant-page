@@ -48,10 +48,18 @@ const allHeaderBtns = document.querySelectorAll('.btns>button')
 // defolt load home page
 home()
 
+function buttonDefoltColor(){
+  allHeaderBtns.forEach(function(button) {
+    button.style.background = "white";
+  });
+}
+
 allHeaderBtns.forEach(
   (button)=>{
-    button.addEventListener('click',()=>{
+    button.addEventListener('click',(e)=>{
       container.removeChild(container.lastChild);
+      buttonDefoltColor()
+      e.target.style.background = "gray"
     })
   }
 )
