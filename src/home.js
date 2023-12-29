@@ -1,6 +1,5 @@
 function home(){
 
-    
     const test = document.createElement('div')
     test.textContent = "home"
     
