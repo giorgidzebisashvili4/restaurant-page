@@ -14,6 +14,10 @@ function menu(){
     const foodcard = document.createElement('div')
     foodcard.classList.add('food1')
 
+    const foodtext = document.createElement('div')
+    foodtext.classList.add('food1Discription')
+
+
     const foodName = document.createElement("h3")
     foodName.textContent = "khinkali"
 
@@ -31,8 +35,10 @@ function menu(){
     menu.appendChild(foodcard)
 
     foodcard.appendChild(khinkali)
-    foodcard.appendChild(foodName)
-    foodcard.appendChild(foodDescription)
+    foodcard.appendChild(foodtext)
+   
+    foodtext.appendChild(foodName)
+    foodtext.appendChild(foodDescription)
 
     container.appendChild(menu)
     

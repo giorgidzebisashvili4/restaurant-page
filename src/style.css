@@ -53,8 +53,32 @@ button{
 .home>*,
 .menu>*,
 .contact>*{
-    width: 500px;
+    width: 700px;
 }
 .food1>img{
     width: 250px;
+    margin-top: 18.72px;
+}
+
+.shef>img{
+    width: 250px;
+    
+}
+
+.food1{
+    display: grid;
+    grid-template-columns: 250px 350px;
+    gap: 15px;
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.shef{
+    display: grid;
+    grid-template-columns: 250px 350px;
+    gap: 15px;
+    background-color: rgb(220, 220, 220);
+    padding: 20px;
+    border-radius: 25px;
 }
